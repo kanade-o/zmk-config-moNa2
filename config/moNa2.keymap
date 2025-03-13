@@ -127,18 +127,18 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_1 {
+        num_and_symbols {
             bindings = <
-&kp GRAVE                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                                &kp PERCENT           &kp PLUS               &kp MINUS         &kp ASTERISK       &kp SLASH
-&kp EXCLAMATION             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HASH   &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp TILDE  &trans                     &kp PIPE        &kp LESS_THAN         &kp GREATER_THAN       &kp COMMA         &kp PERIOD         &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans     &trans                     &trans          &trans                                                                            &kp PIPE
+&kp GRAVE                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                                 &kp PERCENT    &kp PLUS              &kp MINUS              &kp ASTERISK      &kp SLASH
+&kp EXCLAMATION             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HASH    &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOLLAR  &trans                     &kp PIPE        &kp LESS_THAN  &kp GREATER_THAN      &kp COMMA              &kp PERIOD        &kp BACKSLASH
+&trans                      &trans           &trans           &trans           &trans      &trans                     &trans          &trans                                                                        &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_2 {
+        mouse_and_func {
             bindings = <
 &trans          &kp F7  &kp F8  &kp F9  &kp F12                    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
 &screen_shot    &kp F4  &kp F5  &kp F6  &kp F11  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
@@ -149,7 +149,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        bluetooth {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans        &trans        &trans        &trans        &trans
