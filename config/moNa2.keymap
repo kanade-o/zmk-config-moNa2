@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R        &kp T                                                   &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F        &kp G        &trans                  &kp SLASH          &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V        &kp B        &lt 3 LEFT_BRACKET      &kp RIGHT_BRACKET  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESCAPE        &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LANG2  &lt 2 SPACE  &mt LEFT_CONTROL TAB    &kp BACKSPACE      &kp ENTER                             &kp DEL
+&kp Q               &kp W         &kp E             &kp R      &kp T                                                          &kp Y      &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D             &kp F      &kp G        &trans                         &kp SLASH          &kp H      &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V      &kp B        &lt 4 LEFT_BRACKET             &kp RIGHT_BRACKET  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp ESCAPE          &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 TAB  &lt 2 SPACE  &mt LEFT_SHIFT LEFT_CONTROL    &kp BACKSPACE      &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -91,15 +91,24 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        mouse_and_func {
+        arrow_and_func {
             bindings = <
 &trans            &kp F7  &kp F8  &kp F9  &kp F12                    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
 &kp LEFT_CONTROL  &kp F4  &kp F5  &kp F6  &kp F11  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
-&kp LEFT_SHIFT    &kp F1  &kp F2  &kp F3  &kp F10  &trans    &trans  &mkp MB4  &mkp MB1        &mkp MB2      &mkp MB5         &trans
+&kp LEFT_SHIFT    &kp F1  &kp F2  &kp F3  &kp F10  &trans    &trans  &trans    &trans          &trans        &trans           &trans
 &trans            &trans  &trans  &trans  &trans   &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
+            >;
         };
 
         bluetooth {
