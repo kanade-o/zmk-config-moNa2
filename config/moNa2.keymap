@@ -50,6 +50,27 @@
             bindings = <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp NUMBER_4>;
             label = "SCREEN_SHOT";
         };
+
+        change_lang: change_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp SPACE>;
+            label = "CHANGE_LANG";
+        };
+
+        swing_left: swing_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT>;
+            label = "SWING_LEFT";
+        };
+
+        swing_right: swing_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp RIGHT>;
+            label = "SWING_RIGHT";
+        };
     };
 
     behaviors {
@@ -69,6 +90,25 @@
 
             tap-ms = <20>;
         };
+
+        change_lang_be: change_lang_be {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CHANGE_LANG_BE";
+            bindings = <&lt>, <&change_lang>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
+
+        swing_left_be: swing_left_be {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SWING_LEFT_BE";
+            bindings = <&lt>, <&swing_left>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -76,10 +116,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E             &kp R                               &kp T                                          &kp Y      &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D             &kp F                               &kp G        &trans             &kp MINUS      &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V                               &kp B        &lt 3 RIGHT_GUI    &kp RIGHT_GUI  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESCAPE          &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 C_KEYBOARD_INPUT_ASSIST_NEXT  &lt 2 SPACE  &kp TAB            &kp BACKSPACE  &kp ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R                &kp T                                               &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                &kp G        &trans                  &kp MINUS      &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                &kp B        &swing_left_be 3 0      &swing_right   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp ESCAPE        &kp LEFT_ALT  &kp LEFT_COMMAND  &change_lang_be 1 0  &lt 2 SPACE  &mt LEFT_CONTROL TAB    &kp BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
