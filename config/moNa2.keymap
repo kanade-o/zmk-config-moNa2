@@ -93,10 +93,10 @@
 
         arrow_and_func {
             bindings = <
-&trans            &kp LC(LG(F))       &kp LS(LG(NUMBER_4))  &kp F9        &kp F12                                &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
-&kp LEFT_CONTROL  &kp LC(LEFT_ARROW)  &kp LG(MINUS)         &kp LG(PLUS)  &kp LC(RIGHT_ARROW)  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
-&kp LEFT_SHIFT    &kp F1              &kp F2                &kp F3        &kp F10              &trans    &trans  &trans    &trans          &trans        &trans           &trans
-&trans            &trans              &trans                &trans        &trans               &trans    &trans  &trans                                                   &trans
+&kp LS(LG(NUMBER_4))  &kp LC(LG(F))       &kp LG(PLUS)   &kp LG(MINUS)     &kp F11                                &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+&kp LEFT_CONTROL      &kp LC(LEFT_ARROW)  &kp LG(LA(L))  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
+&kp LEFT_SHIFT        &trans              &trans         &trans            &trans               &trans    &trans  &trans    &trans          &trans        &trans           &trans
+&trans                &trans              &trans         &trans            &trans               &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -104,7 +104,7 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &mkp MB3  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
