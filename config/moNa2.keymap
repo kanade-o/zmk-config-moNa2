@@ -44,11 +44,6 @@
             bindings = <&kp TILDE>;
             key-positions = <1 2>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
     };
 
     macros {
@@ -84,10 +79,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R            &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F            &kp G        &trans                &kp DEL        &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V            &kp B        &lt 4 GRAVE           &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 LC(SPACE)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
+&kp Q             &kp W         &kp E             &kp R                       &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                       &kp G        &trans                &kp DEL        &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                       &kp B        &lt 4 GRAVE           &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp K_MUTE        &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_COMMAND LC(SPACE)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings =
