@@ -92,9 +92,9 @@
 
         num_and_symbols {
             bindings = <
-&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                         &kp TILDE      &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp PIPE
+&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                         &kp CARET      &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp PIPE
 &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HASH    &kp LC(LA(KP_NUMBER_0))    &trans  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp LEFT_SHIFT   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOLLAR  &trans                     &trans  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET       &trans
+&kp KP_COMMA     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOLLAR  &trans                     &trans  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_DOT      &kp QUESTION
 &trans           &trans           &trans           &trans           &trans      &trans                     &trans  &trans                                                                      &trans
             >;
 
