@@ -44,6 +44,11 @@
             bindings = <&kp TILDE>;
             key-positions = <1 2>;
         };
+
+        eq2 {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <7 6>;
+        };
     };
 
     macros {
