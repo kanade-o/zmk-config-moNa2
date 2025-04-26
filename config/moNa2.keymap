@@ -84,10 +84,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E             &kp R                       &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D             &kp F                       &kp G        &trans                &kp DELETE       &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V                       &kp B        &lt 4 C_VOL_DN        &kp C_VOLUME_UP  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESC             &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_COMMAND LC(SPACE)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &kp BACKSPACE    &lt 1 ENTER                             &kp ESCAPE
+&kp Q             &kp W         &kp E             &kp R                       &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                       &kp G        &trans                &kp DELETE       &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                       &kp B        &lt 4 C_VOL_DN        &kp C_VOLUME_UP  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp ESC           &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_COMMAND LC(SPACE)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &kp BACKSPACE    &lt 1 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings =
@@ -97,7 +97,7 @@
 
         num_and_symbols {
             bindings = <
-&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                           &kp DOLLAR     &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp KP_EQUAL
+&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                           &trans         &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp KP_EQUAL
 &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HASH      &kp LC(LA(KP_NUMBER_0))    &trans  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp QUESTION  &trans                     &trans  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET       &kp DOLLAR
 &trans           &trans           &kp COMMA        &trans           &trans        &trans                     &trans  &trans                                                                      &trans
