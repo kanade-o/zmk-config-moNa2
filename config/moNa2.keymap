@@ -97,10 +97,10 @@
 
         num_and_symbols {
             bindings = <
-&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp AT                                           &trans         &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp KP_EQUAL
-&kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HASH      &kp LC(LA(KP_NUMBER_0))    &trans  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp QUESTION  &trans                     &trans  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET       &kp DOLLAR
-&trans           &trans           &kp COMMA        &trans           &trans        &trans                     &trans  &trans                                                                      &trans
+&kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp AT                                           &trans         &kp PERCENT           &kp PLUS               &kp ASTERISK    &kp KP_EQUAL
+&kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp HASH      &kp LC(LA(KP_NUMBER_0))    &trans  &kp EXCL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp QUESTION  &trans                     &trans  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET       &kp DOLLAR
+&trans           &trans           &kp COMMA        &kp LEFT_COMMAND  &trans        &trans                     &trans  &trans                                                                      &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
