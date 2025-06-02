@@ -22,7 +22,7 @@
 
         eq {
             bindings = <&kp EQUAL>;
-            key-positions = <8 9>;
+            key-positions = <7 20>;
         };
 
         single_quotation {
