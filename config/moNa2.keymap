@@ -59,6 +59,11 @@
             bindings = <&kp CARET>;
             key-positions = <24 25>;
         };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <23 24>;
+        };
     };
 
     macros {
