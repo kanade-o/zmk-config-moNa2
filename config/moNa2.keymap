@@ -49,6 +49,16 @@
             bindings = <&kp KP_EQUAL>;
             key-positions = <7 6>;
         };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <30 31>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <24 25>;
+        };
     };
 
     macros {
