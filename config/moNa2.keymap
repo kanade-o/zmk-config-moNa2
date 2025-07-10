@@ -99,10 +99,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E             &kp R                       &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D             &kp F                       &kp G        &trans                &kp DELETE     &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
-&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V                       &kp B        &lt 4 C_VOL_DN        &kp TAB        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESC             &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_COMMAND LC(SPACE)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
+&kp Q               &kp W         &kp E             &kp R                       &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D             &kp F                       &kp G        &trans              &kp DELETE     &kp H        &kp J  &kp K      &kp L    &lt 3 SEMICOLON
+&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V                       &kp B        &lt 4 C_VOL_DN      &kp TAB        &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp ESC             &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_COMMAND LC(SPACE)  &lt 2 SPACE  &mt LEFT_ALT TAB    &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings =
@@ -123,10 +123,10 @@
 
         arrow_and_func {
             bindings = <
-&kp LS(LG(NUMBER_4))  &kp LC(LG(F))       &kp LG(PLUS)   &kp LG(MINUS)     &kp F11                                &trans    &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans
-&kp LEFT_CONTROL      &kp LC(LEFT_ARROW)  &kp LG(LA(L))  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
-&kp LEFT_SHIFT        &trans              &trans         &trans            &trans               &trans    &trans  &trans    &kp HOME        &kp END       &trans           &trans
-&trans                &trans              &trans         &kp LEFT_COMMAND  &trans               &trans    &trans  &trans                                                   &trans
+&kp LS(LG(NUMBER_4))  &kp LC(LG(F))           &kp LG(PLUS)          &kp LG(MINUS)           &kp F11                                &trans    &trans          &trans        &trans           &trans
+&kp LEFT_CONTROL      &kp LC(LEFT_ARROW)      &kp LC(UP_ARROW)      &kp LG(SPACE)           &kp LC(RIGHT_ARROW)  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
+&kp LEFT_SHIFT        &kp LS(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(RIGHT))    &trans    &trans  &trans    &kp HOME        &kp END       &trans           &trans
+&trans                &trans                  &trans                &kp LEFT_COMMAND        &trans               &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -134,10 +134,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
+&trans  &trans  &trans     &trans     &trans                    &trans    &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans     &trans     &trans  &trans    &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
+&trans  &trans  &kp LG(C)  &kp LG(V)  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans     &trans  &trans    &trans  &trans                                  &trans
             >;
         };
 
